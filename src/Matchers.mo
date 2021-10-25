@@ -14,6 +14,7 @@ import Debug "mo:base/Debug";
 import Int "mo:base/Int";
 import Nat "mo:base/Nat";
 import Option "mo:base/Option";
+import Float "mo:base/Float";
 import T "Testable";
 
 module {
