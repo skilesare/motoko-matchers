@@ -128,7 +128,7 @@ module {
     public func inFloatRange<A <: Float>(lower : Float, upper : Float) : Matcher<A> = {
         matches = func (item : A) : Bool = lower <= item and item <= upper;
         describeMismatch = func (item : A, description : Description) =
-            description.appendText(Int.toText(item) # " was expected to be in range [" # Float.toText(lower) # " .. " # Float.toText(upper) # "]");
+            description.appendText(Float.toText(item) # " was expected to be in range [" # Float.toText(lower) # " .. " # Float.toText(upper) # "]");
     };
 
     /// Matches if all matchers match, short circuits (like `and`)
